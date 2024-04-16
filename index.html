@@ -240,17 +240,14 @@ a:hover, hr {
 <div class="flicker"></div>
 <div class="body">
 
-<audio id="myAudio" preload="auto" loop>
+<audio preload="auto" loop>
   <source src="https://mychvr.ch/d.mp3?raw=true" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 
 <script>
-  var audio = document.getElementById("myAudio");
-  audio.addEventListener("ended", function() {
-    audio.currentTime = 0;
+    var audio = new Audio('https://mychvr.ch/d.mp3?raw=true');
     audio.play();
-  });
 </script>
 	
 <pre>
